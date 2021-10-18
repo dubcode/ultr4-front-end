@@ -1,0 +1,19 @@
+query AllProductsQuery {  
+  products {
+    id
+    title
+    slug
+    price
+    saleprice
+    instock
+    onsale
+    thumbnail {
+      url
+    }
+    category {
+      id
+      slug
+      name
+    }
+  }
+}

@@ -1,0 +1,157 @@
+/* RESET */
+/* VARS */
+:root {
+  --black: #222;
+  --grey: #999;
+  --white: #fff;
+  --light: rgba(255,255,255,0.9);
+  --dark: rgba(0,0,0,0.9);
+  --primary: #701500;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+div {
+  display: block;
+}
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+:focus {
+  outline: none;
+}
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+/* BLOCKS */
+.row,
+.spacer {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.spacer {
+  height: 2rem;
+}
+.ctr {
+  display: block;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1280px;
+  width: 100%;
+}
+.row::after,
+.ctr::after,
+.spacer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.flex {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-l {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-r {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.fill {
+  height: 100%;
+  width: 100%;
+}
+.fill-vh {
+  height: 100vh;
+}
+.page-enter-active, .page-leave-active {
+  transition: opacity 0.6s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
+
+/* Typography */
+.title {
+  display: block;
+  color: var(--black);
+  font-size: 2.4rem;
+  margin: 2rem 0 4rem 0;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ul.breadcrumbs {
+  font-size: 70%;
+  margin: 0;
+  padding: 0;
+}
+ul.breadcrumbs li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+ul.breadcrumbs li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+ul.breadcrumbs li:hover a {
+  color: var(--black);
+}
+
+@media only screen and (min-width: 1024px) {
+  .ctr {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .ctr {
+    padding: 0;
+  }
+}

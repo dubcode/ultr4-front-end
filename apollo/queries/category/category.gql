@@ -1,0 +1,16 @@
+query SingleCategoryQuery($id: ID!) {
+  category(id: $id) {
+    id
+    slug
+    name
+    products{
+      id
+      title
+      slug
+      price
+      thumbnail {
+        url
+      }
+    }
+  }
+}

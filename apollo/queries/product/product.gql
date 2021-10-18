@@ -1,0 +1,20 @@
+query SingleProductQuery($id: ID!) {
+  product(id: $id) {
+    id
+    title
+    description
+    slug
+    price
+    saleprice
+    instock
+    onsale
+    hero {
+      url
+    }
+    category {
+      id
+      slug
+      name
+    }
+  }
+}
